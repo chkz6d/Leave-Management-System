@@ -23,18 +23,10 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeRepository employeeRepository;
 	
-//	@Autowired
-//	private DetailsRepository detailsRepository;
-//	
 	@GetMapping("/employees")
 	public List<Employee> getAllFlight(){
 		return employeeRepository.findAll();
 	}
-	
-//	@GetMapping("/employees/details")
-//	public List<Details> getAllDetails(){
-//		return detailsRepository.findAll();
-//	}
 	
 	//create employee rest api
 	@PostMapping("/employees")
@@ -81,9 +73,7 @@ public class EmployeeController {
 	}
 		
 	
-	//
-		
-		
+
 	
 }
 
