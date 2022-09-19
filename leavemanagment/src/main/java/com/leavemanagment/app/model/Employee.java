@@ -3,10 +3,6 @@ package com.leavemanagment.app.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-//import javax.persistence.JoinColumn;
-//import javax.persistence.OneToOne;
-//import javax.persistence.FetchType;
-//import javax.persistence.CascadeType;
 import javax.persistence.Table;
 
 @Entity
@@ -24,32 +20,7 @@ public class Employee {
 	
 	@Column(name = "leave_count")
 	private Integer leave_count;
-	
-//	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-//	@JoinColumn(name = "details")
-//	private Details details;
-//	
-//	public Employee(Details details) {
-//		super();
-//		this.details = details;
-//	}
-//
-//	public Details getDetails() {
-//		return details;
-//	}
-//
-//	public void setDetails(Details details) {
-//		this.details = details;
-//	}
-//	
-//	public Employee(String name, Integer managerId, Integer leave_count, Details details) {
-//		super();
-//		this.name = name;
-//		this.managerId = managerId;
-//		this.leave_count = leave_count;
-//		this.details = details;
-//	}
-	
+
 	public Employee() {}
 	
 
