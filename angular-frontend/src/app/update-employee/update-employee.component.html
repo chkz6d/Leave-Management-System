@@ -1,0 +1,35 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Leave Balance Application</h3>
+    <!--
+        <form></form> A way to get the information from the user
+    -->
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Employee ID</label>
+            <input type="text" class ="form-control" id = "id"
+                [(ngModel)] ="employee.id" name = "id">
+        </div>
+        
+        <div class="form-group">
+            <label> Number of Days Leave</label>
+            <input type="text" class ="form-control" id = "leave"
+                [(ngModel)] ="employee.leave" name = "leave">
+        </div>
+
+        <div class="form-group">
+            <label> Type of Leave</label>
+            <input type="text" class ="form-control" id = "type"
+                [(ngModel)] ="employee.type" name = "type">
+        </div>
+
+        <div class="form-group">
+            <label> Reason</label>
+            <input type="text" class ="form-control" id = "reason"
+                [(ngModel)] ="employee.reason" name = "reason">
+        </div>
+
+    
+        <button class = "btn btn-success" type ="submit"></button>
+    </form>
+    </div>
